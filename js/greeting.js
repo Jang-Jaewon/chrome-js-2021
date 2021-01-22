@@ -22,7 +22,7 @@ function askForName() {
 function paintGreating(text) {
   form.classList.remove(SHOWING_CN);
   greetings.classList.add(SHOWING_CN);
-  greetings.innerHTML = `Hello ${text}`;
+  greetings.innerHTML = `<p>Hello ${text}!</p><p>Input your today schedule :)<p>`;
 }
 
 function handleSubmit(event) {

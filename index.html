@@ -7,23 +7,57 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-      <div class="container-todo">
-        <div class="js-clock">
-          <h1>00:00</h1>
+    <div>
+      <form
+        class="google-form"
+        method="get"
+        action="http://www.google.co.kr/search"
+        target="_blank"
+      >
+        <input
+          class="google-input"
+          type="text"
+          placeholder="Google 검색 또는 URL 입력"
+        />
+      </form>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="input-title">
+          <form class="js-form form">
+            <input
+              id="form-input"
+              type="text"
+              placeholder="Master, Input your name here!"
+            />
+          </form>
+          <h4 class="js-greetings greetings"></h4>
         </div>
 
-        <form class="js-form form">
-          <input type="text" placeholder="what is your name?" />
-        </form>
-        <h4 class="js-greetings greetings"></h4>
+      <div class="container">
+        <div class="container-todo">
+          <form class="js-toDoForm">
+            <input
+              class="toDo-input"
+              type="text"
+              placeholder="Write a to do :)"
+            />
+          </form>
+          <ul class="js-toDoList"></ul>
+        </div>
+      </div>
+    </section>
 
-        <form class="js-toDoForm">
-          <input type="text" placeholder="Write a to do" />
-        </form>
-        <ul class="js-toDoList"></ul>
-
+    <div class="today-info">
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <div class="in-weather">
         <span class="js-weather"></span>
-
+      </div>
+    </div>
+  </div>
 
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
