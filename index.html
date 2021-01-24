@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width" />
     <title>js - chorme</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
-    <div>
+    <section>
+      <div class="today-info">
+        <div class="js-clock">
+          <h1>00:00</h1>
+        </div>
+        <div class="js-weather">
+          <span class="js-weather"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <form
         class="google-form"
         method="get"
@@ -18,9 +30,11 @@
           class="google-input"
           type="text"
           placeholder="Google 검색 또는 URL 입력"
+          name="q"
+          value=""
         />
       </form>
-    </div>
+    </section>
 
     <section>
       <div class="container">
@@ -34,6 +48,7 @@
           </form>
           <h4 class="js-greetings greetings"></h4>
         </div>
+      </div>
 
       <div class="container">
         <div class="container-todo">
@@ -44,25 +59,32 @@
               placeholder="Write a to do :)"
             />
           </form>
-          <ul class="js-toDoList"></ul>
+        </div>
+
+        <div class="container-todo">
+          <div class="todo-ul">
+            <h3>DoTo-List</h3>
+            <ul class="pendingList"></ul>
+          </div>
+
+          <div class="todo-ul">
+            <h3>Complete-List</h3>
+            <ul class="completeList"></ul>
+          </div>
         </div>
       </div>
     </section>
-
-    <div class="today-info">
-      <div class="js-clock">
-        <h1>00:00</h1>
-      </div>
-      <div class="in-weather">
-        <span class="js-weather"></span>
-      </div>
-    </div>
-  </div>
 
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/weather.js"></script>
+
+    <!-- fontawesome code kit
+    <script
+      src="https://kit.fontawesome.com/aa26b6c828.js"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>
